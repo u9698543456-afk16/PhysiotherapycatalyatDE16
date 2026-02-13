@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "headline": "Hören Sie auf, Schmerz zu bewältigen. Beginnen Sie Ihre Transformation.",
+    "subheadline": "Der 12-wöchige biomechanische Plan von Dr. Aris Thorne.",
+    "cta": "Beantragen Sie das 12-Wochen-Programm",
+    "stats": {
+      "years": "Jahre Eliteerfahrung",
+      "weeks": "Wochen Transformation",
+      "daily": "Täglich erforderliche Zeit"
+    }
+  },
+  "about": {
+    "title": "Dr. Aris Thorne",
+    "subtitle": "The Catalyst",
+    "bio1": "Ein Biomechanik-Architekt mit 15 Jahren Erfahrung in der Behandlung von Eliteathleten und hochleistungsfähigen Führungskräften.",
+    "bio2": "Dr. Thornes 'Catalyst Method' lehnt das traditionelle 'Ruhe und Eis'-Modell ab und nutzt stattdessen datengesteuerte Stressbelastung, um die strukturelle Integrität des Körpers wiederherzustellen. Er glaubt, dass Erholung eine Leistungsmetrik ist, keine klinische Pflicht.",
+    "motto": "Hören Sie auf, Schmerz zu bewältigen. Beginnen Sie Ihre Transformation.",
+    "expertise": "Elite-Expertise",
+    "expertiseDesc": "Vertraut von Olympiathleten, professionellen Sportteams und Fortune-500-Unternehmen für biomechanische Optimierung.",
+    "datadriven": "Datengesteuerte Herangehensweise",
+    "datadrivenDesc": "Jedes Protokoll basiert auf biomechanischer Analyse, Gewebeadaptationswissenschaft und messbaren Leistungsmetriken.",
+    "results": "Bewährte Ergebnisse",
+    "resultsDesc": "15 Jahre Erfahrung in der Umwandlung von chronischen Schmerzen in Spitzenleistung bei verschiedenen Bevölkerungsgruppen und Leistungszielen."
+  },
+  "roadmap": {
+    "title": "Der 3-Phasen-Plan",
+    "subtitle": "Ihr Transformationspfad",
+    "phase1": {
+      "title": "Phase 1: Zünden",
+      "subtitle": "Linderung & Entzündungshemmung",
+      "description": "Schnelle Schmerzlinderung durch gezielt Gewebemobilisierung und neurologische Neuausbildung. Etablieren Sie Ausgangsmessungen für Ihre biomechanische Analyse."
+    },
+    "phase2": {
+      "title": "Phase 2: Wiederaufbau",
+      "subtitle": "Funktionale Mobilität",
+      "description": "Progressive Belastungsprotokolle, die an Ihre Gewebekapazität angepasst sind. Gewinnen Sie vollständige Bewegungsmuster und sportliches Vertrauen zurück."
+    },
+    "phase3": {
+      "title": "Phase 3: Aufrechterhalten",
+      "subtitle": "Spitzenleistung",
+      "description": "Fortgeschrittene Leistungsoptimierung. Langfristige Widerstandsprotokolle, um Rückfälle zu verhindern und bisherige Grenzen zu überschreiten."
+    }
+  },
+  "pricing": {
+    "title": "Investition in Ihre Leistung",
+    "subtitle": "Elite-Transformation erfordert Elite-Engagement",
+    "monthly": "Monatlich",
+    "paidInFull": "Gesamtbetrag",
+    "save": "Sparen Sie €{{amount}}",
+    "singleSession": {
+      "title": "Einzelne Sitzung",
+      "price": "Pro Sitzung",
+      "features": [
+        "60-minütige Bewertung",
+        "Biomechanische Analyse",
+        "Behandlungssitzung",
+        "Keine laufende Bindung"
+      ],
+      "cta": "Termin buchen"
+    },
+    "catalyst": {
+      "title": "Das 12-Wochen-Catalyst-Programm",
+      "recommended": "EMPFOHLEN",
+      "paidFullLabel": "Gesamtbetrag",
+      "monthlyLabel": "Pro Monat × 3",
+      "features": [
+        "Komplette 12-wöchige Transformation",
+        "Personalisierter biomechanischer Plan",
+        "Wöchentliche Fortschrittsbeurteilungen",
+        "Direkter Zugang zu Dr. Thorne",
+        "Benutzerdefinierter Belastungs-Progressionsplan",
+        "Video-Bewegungsanalyse",
+        "Leistungsoptimierungsprotokolle",
+        "Lebenslanger Wartungsleitfaden"
+      ],
+      "cta": "Jetzt beantragen"
+    },
+    "corporate": {
+      "title": "Corporate-Paket",
+      "price": "Benutzerdefiniert",
+      "priceLabel": "Für Teams",
+      "features": [
+        "Team-Bewertungen",
+        "Vor-Ort-Sitzungen verfügbar",
+        "Gruppenseminare",
+        "Executive-Wellness-Programme"
+      ],
+      "cta": "Kontaktieren Sie uns"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Wird das Programm von der Versicherung abgedeckt?",
+    "a1": "Ja. Obwohl wir nicht im Netzwerk der meisten Anbieter sind, stellen wir detaillierte Rechnungen zur direkten Rückerstattung zur Verfügung. Dr. Thornes Protokolle werden durch peer-reviewed biomechanische Forschung gestützt und qualifizieren sich für viele Versicherungspläne unter 'Rehabilitationsdienste'.",
+    "q2": "Wie viel Zeit ist tatsächlich erforderlich?",
+    "a2": "Nur 15 Minuten pro Tag. Die Catalyst Method priorisiert Effizienz vor Dauer. Jedes Protokoll ist für die Integration in Ihre bestehende Routine konzipiert – kein Fitnessstudio erforderlich.",
+    "q3": "Warum ist die Catalyst Method anders?",
+    "a3": "Die meiste Physiotherapie ist Schmerzbehandlung. Die Catalyst Method ist Leistungsarchitektur. Wir beheben nicht nur das Problem; wir bauen Ihren Körper so um, dass er über Ihre bisherige Kapazität hinaus funktioniert. Jede Übung ist datengesteuert und der Fortschritt ist messbar.",
+    "q4": "Was ist, wenn ich eine komplexe Verletzungsgeschichte habe?",
+    "a4": "Das sind genau die Menschen, die am meisten profitieren. Dr. Thorne ist spezialisiert auf Multi-System-Verletzungen und chronische Schmerzfälle, die auf traditionelle Ansätze nicht reagieren. Ihre Komplexität ist Ihr Vorteil.",
+    "q5": "Was passiert nach den 12 Wochen?",
+    "a5": "Sie erhalten ein lebenslange Wartungsprotokoll und Zugang zu vierteljährlichen Check-ins mit Dr. Thorne. Das Programm endet, aber Ihre Transformation geht weiter.",
+    "q6": "Kann ich das ferngesteuert durchführen?",
+    "a6": "Ja. Die Erstbewertung findet in der Klinik statt für die Bewegungsanalyse. Nachfolgende Termine sind remote per Video verfügbar. Vollständige Anpassung an Ihren Standort und Ihre Vorlieben."
+  },
+  "form": {
+    "title": "Beantragen Sie Prioritätszugriff",
+    "subtitle": "Limitierte Plätze verfügbar. Dr. Thorne überprüft jede Bewerbung persönlich.",
+    "name": "Vollständiger Name",
+    "namePlaceholder": "Dr. Jane Smith",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "jane@example.com",
+    "blocker": "Aktuelle Leistungsblockade",
+    "blockerPlaceholder": "Beschreiben Sie, was Sie von Spitzenleistung abhält...",
+    "submit": "Bewerbung einreichen",
+    "submitting": "Bewerbung wird eingereicht...",
+    "disclaimer": "Durch die Bewerbung stimmen Sie zu, Mitteilungen von The Catalyst Physio zu erhalten",
+    "errors": {
+      "nameRequired": "Name ist erforderlich",
+      "nameLength": "Name muss mindestens 2 Zeichen enthalten",
+      "emailRequired": "E-Mail ist erforderlich",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "blockerRequired": "Bitte beschreiben Sie Ihre aktuelle Herausforderung",
+      "blockerLength": "Bitte geben Sie mehr Details an (mindestens 10 Zeichen)"
+    },
+    "success": {
+      "title": "Prioritätszugriff bestätigt",
+      "subtitle": "Die Transformation hat bereits begonnen.",
+      "message1": "Sie erhalten eine persönliche Mitteilung von Dr. Thorne innerhalb von",
+      "message2": "um Ihre biomechanische Analyse zu planen.",
+      "message3": "Suchen Sie in Ihrem Posteingang nach der",
+      "message4": "PDF.",
+      "hours": "24 Stunden",
+      "pdf": "Vor-Bewertungsprotokoll"
+    }
+  },
+  "sticky": {
+    "cta": "Programm starten"
+  },
+  "footer": {
+    "title": "The Catalyst Physio",
+    "description": "Elite-Biomechanik-Optimierung für Hochleistungsträger, die chronische Schmerzen nicht akzeptieren.",
+    "contact": "Kontakt",
+    "hours": "Öffnungszeiten",
+    "location": "Dublin, Irland",
+    "email": "info@catalystphysio.ie",
+    "phone": "+353 1 234 5678",
+    "mondayFriday": "Montag - Freitag: 7:00 - 20:00",
+    "saturday": "Samstag: 9:00 - 14:00",
+    "sunday": "Sonntag: Auf Anfrage",
+    "copyright": "© 2024 The Catalyst Physio. Alle Rechte vorbehalten."
+  }
+}

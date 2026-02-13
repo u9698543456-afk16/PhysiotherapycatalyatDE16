@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "headline": "Stop Managing Pain. Start Your Transformation.",
+    "subheadline": "The 12-week biomechanical blueprint by Dr. Aris Thorne.",
+    "cta": "Apply for the 12-Week Program",
+    "stats": {
+      "years": "Years of Elite Experience",
+      "weeks": "Week Transformation",
+      "daily": "Daily Time Investment"
+    }
+  },
+  "about": {
+    "title": "Dr. Aris Thorne",
+    "subtitle": "The Catalyst",
+    "bio1": "A biomechanical architect with 15 years of experience treating elite athletes and high-performing executives.",
+    "bio2": "Dr. Thorne's 'Catalyst Method' rejects the traditional 'rest and ice' model, instead utilizing data-driven stress-loading to rebuild the body's structural integrity. He believes recovery is a performance metric, not a clinical chore.",
+    "motto": "Stop managing pain. Start your transformation.",
+    "expertise": "Elite Expertise",
+    "expertiseDesc": "Trusted by Olympic athletes, professional sports teams, and Fortune 500 executives for biomechanical optimization.",
+    "datadriven": "Data-Driven Approach",
+    "datadrivenDesc": "Every protocol is built on biomechanical analysis, tissue adaptation science, and measurable performance metrics.",
+    "results": "Proven Results",
+    "resultsDesc": "15 years of transforming chronic pain into peak performance across diverse populations and performance goals."
+  },
+  "roadmap": {
+    "title": "The 3-Phase Blueprint",
+    "subtitle": "Your Transformation Pathway",
+    "phase1": {
+      "title": "Phase 1: Ignite",
+      "subtitle": "Relief & Inflammation",
+      "description": "Rapid pain reduction through targeted tissue mobilization and neurological re-education. Establish baseline measurements for your biomechanical audit."
+    },
+    "phase2": {
+      "title": "Phase 2: Rebuild",
+      "subtitle": "Functional Mobility",
+      "description": "Progressive loading protocols adapted to your tissue capacity. Regain full movement patterns and athletic confidence."
+    },
+    "phase3": {
+      "title": "Phase 3: Sustain",
+      "subtitle": "Peak Performance",
+      "description": "Advanced performance optimization. Long-term resilience protocols to prevent regression and exceed previous limitations."
+    }
+  },
+  "pricing": {
+    "title": "Investment in Your Performance",
+    "subtitle": "Elite transformation requires elite commitment",
+    "monthly": "Monthly",
+    "paidInFull": "Paid in Full",
+    "save": "Save €{{amount}}",
+    "singleSession": {
+      "title": "Single Session",
+      "price": "Per Session",
+      "features": [
+        "60-minute assessment",
+        "Biomechanical evaluation",
+        "Treatment session",
+        "No ongoing commitment"
+      ],
+      "cta": "Book Session"
+    },
+    "catalyst": {
+      "title": "The 12-Week Catalyst Program",
+      "recommended": "RECOMMENDED",
+      "paidFullLabel": "Paid in Full",
+      "monthlyLabel": "Per Month × 3",
+      "features": [
+        "Complete 12-week transformation",
+        "Personalized biomechanical blueprint",
+        "Weekly progress assessments",
+        "Direct access to Dr. Thorne",
+        "Custom load progression plan",
+        "Video movement analysis",
+        "Performance optimization protocols",
+        "Lifetime maintenance guide"
+      ],
+      "cta": "Apply Now"
+    },
+    "corporate": {
+      "title": "Corporate Package",
+      "price": "Custom",
+      "priceLabel": "For Teams",
+      "features": [
+        "Team assessments",
+        "On-site sessions available",
+        "Group workshops",
+        "Executive wellness programs"
+      ],
+      "cta": "Contact Us"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Does insurance cover the program?",
+    "a1": "Yes. While we are not in-network with most providers, we provide detailed invoices for direct reimbursement. Dr. Thorne's protocols are backed by peer-reviewed biomechanical research, qualifying for many insurance plans under 'rehabilitation services.'",
+    "q2": "How much time does this actually require?",
+    "a2": "Only 15 minutes per day. The Catalyst Method prioritizes efficiency over duration. Each protocol is designed for integration into your existing routine—no gym membership required.",
+    "q3": "Why is the Catalyst Method different?",
+    "a3": "Most physiotherapy is pain management. The Catalyst Method is performance architecture. We don't just fix the problem; we rebuild your body to perform beyond your previous capacity. Every exercise is data-driven and progression is measurable.",
+    "q4": "What if I have a complex injury history?",
+    "a4": "That's exactly who benefits most. Dr. Thorne specializes in multi-system injuries and chronic pain cases that haven't responded to traditional approaches. Your complexity is your advantage.",
+    "q5": "What happens after the 12 weeks?",
+    "a5": "You receive a lifetime maintenance protocol and access to quarterly check-ins with Dr. Thorne. The program ends, but your transformation continues.",
+    "q6": "Can I do this remotely?",
+    "a6": "Yes. Initial assessment is in-clinic for movement analysis. Follow-ups are available remotely via video. Complete customization based on your location and preferences."
+  },
+  "form": {
+    "title": "Apply for Priority Access",
+    "subtitle": "Limited slots available. Dr. Thorne personally reviews each application.",
+    "name": "Full Name",
+    "namePlaceholder": "Dr. Jane Smith",
+    "email": "Email Address",
+    "emailPlaceholder": "jane@example.com",
+    "blocker": "Current Performance Blocker",
+    "blockerPlaceholder": "Describe what's holding you back from peak performance...",
+    "submit": "Submit Application",
+    "submitting": "Submitting Application...",
+    "disclaimer": "By applying, you agree to receive communication from The Catalyst Physio",
+    "errors": {
+      "nameRequired": "Name is required",
+      "nameLength": "Name must be at least 2 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "blockerRequired": "Please describe your current challenge",
+      "blockerLength": "Please provide more detail (at least 10 characters)"
+    },
+    "success": {
+      "title": "Priority Access Confirmed",
+      "subtitle": "The transformation has already begun.",
+      "message1": "You will receive a personal outreach from Dr. Thorne within",
+      "message2": "to schedule your Biomechanical Audit.",
+      "message3": "Check your inbox for the",
+      "message4": "PDF.",
+      "hours": "24 hours",
+      "pdf": "Pre-Assessment Protocol"
+    }
+  },
+  "sticky": {
+    "cta": "Start Program"
+  },
+  "footer": {
+    "title": "The Catalyst Physio",
+    "description": "Elite biomechanical optimization for high-performers who refuse to accept pain as their new normal.",
+    "contact": "Contact",
+    "hours": "Hours",
+    "location": "Dublin, Ireland",
+    "email": "info@catalystphysio.ie",
+    "phone": "+353 1 234 5678",
+    "mondayFriday": "Monday - Friday: 7am - 8pm",
+    "saturday": "Saturday: 9am - 2pm",
+    "sunday": "Sunday: By appointment",
+    "copyright": "© 2024 The Catalyst Physio. All rights reserved."
+  }
+}

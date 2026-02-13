@@ -3,6 +3,7 @@ import { Dialog } from './Dialog';
 import { Button } from './Button';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface LeadCaptureFormProps {
   isOpen: boolean;
@@ -22,6 +23,7 @@ interface FormErrors {
 }
 
 export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -40,21 +42,21 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
     const newErrors: FormErrors = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = t('form.errors.nameRequired');
     } else if (formData.name.trim().length < 2) {
-      newErrors.name = 'Name must be at least 2 characters';
+      newErrors.name = t('form.errors.nameLength');
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = t('form.errors.emailRequired');
     } else if (!validateEmail(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
+      newErrors.email = t('form.errors.emailInvalid');
     }
 
     if (!formData.blocker.trim()) {
-      newErrors.blocker = 'Please describe your current challenge';
+      newErrors.blocker = t('form.errors.blockerRequired');
     } else if (formData.blocker.trim().length < 10) {
-      newErrors.blocker = 'Please provide more detail (at least 10 characters)';
+      newErrors.blocker = t('form.errors.blockerLength');
     }
 
     setErrors(newErrors);
@@ -99,16 +101,16 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
       {!isSubmitted ? (
         <>
           <h3 className="text-2xl font-bold text-white mb-2">
-            Apply for Priority Access
+            {t('form.title')}
           </h3>
           <p className="text-gray-400 mb-6">
-            Limited slots available. Dr. Thorne personally reviews each application.
+            {t('form.subtitle')}
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">
-                Full Name
+                {t('form.name')}
               </label>
               <input
                 id="name"
@@ -118,7 +120,7 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
                 className={`w-full px-4 py-3 bg-[#0A0A0A] border ${
                   errors.name ? 'border-red-500' : 'border-[#2a2a2a]'
                 } rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00D1D1] transition-colors`}
-                placeholder="Dr. Jane Smith"
+                placeholder={t('form.namePlaceholder')}
               />
               {errors.name && (
                 <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -127,7 +129,7 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
 
             <div>
               <label htmlFor="email" className="block text-sm font-semibold text-white mb-2">
-                Email Address
+                {t('form.email')}
               </label>
               <input
                 id="email"
@@ -137,7 +139,7 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
                 className={`w-full px-4 py-3 bg-[#0A0A0A] border ${
                   errors.email ? 'border-red-500' : 'border-[#2a2a2a]'
                 } rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00D1D1] transition-colors`}
-                placeholder="jane@example.com"
+                placeholder={t('form.emailPlaceholder')}
               />
               {errors.email && (
                 <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -146,7 +148,7 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
 
             <div>
               <label htmlFor="blocker" className="block text-sm font-semibold text-white mb-2">
-                Current Performance Blocker
+                {t('form.blocker')}
               </label>
               <textarea
                 id="blocker"
@@ -156,7 +158,7 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
                 className={`w-full px-4 py-3 bg-[#0A0A0A] border ${
                   errors.blocker ? 'border-red-500' : 'border-[#2a2a2a]'
                 } rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00D1D1] transition-colors resize-none`}
-                placeholder="Describe what's holding you back from peak performance..."
+                placeholder={t('form.blockerPlaceholder')}
               />
               {errors.blocker && (
                 <p className="text-red-500 text-sm mt-1">{errors.blocker}</p>
@@ -168,11 +170,11 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
               disabled={isSubmitting}
               className="w-full"
             >
-              {isSubmitting ? 'Submitting Application...' : 'Submit Application'}
+              {isSubmitting ? t('form.submitting') : t('form.submit')}
             </Button>
 
             <p className="text-xs text-gray-500 text-center">
-              By applying, you agree to receive communication from The Catalyst Physio
+              {t('form.disclaimer')}
             </p>
           </form>
         </>
@@ -193,19 +195,19 @@ export function LeadCaptureForm({ isOpen, onClose }: LeadCaptureFormProps) {
           </motion.div>
 
           <h3 className="text-3xl font-bold text-white mb-4">
-            Priority Access Confirmed
+            {t('form.success.title')}
           </h3>
 
           <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-            The transformation has already begun.
+            {t('form.success.subtitle')}
           </p>
 
           <div className="bg-[#0A0A0A] border border-[#2a2a2a] rounded-lg p-6 mb-8 text-left">
             <p className="text-gray-400 leading-relaxed">
-              You will receive a personal outreach from Dr. Thorne within <span className="text-[#00D1D1] font-semibold">24 hours</span> to schedule your Biomechanical Audit.
+              {t('form.success.message1')} <span className="text-[#00D1D1] font-semibold">{t('form.success.hours')}</span> {t('form.success.message2')}
             </p>
             <p className="text-gray-400 leading-relaxed mt-4">
-              Check your inbox for the <span className="text-[#00D1D1] font-semibold">'Pre-Assessment Protocol' PDF</span>.
+              {t('form.success.message3')} <span className="text-[#00D1D1] font-semibold">{t('form.success.pdf')}</span> {t('form.success.message4')}
             </p>
           </div>
 

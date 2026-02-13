@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './Button';
+import { useTranslation } from 'react-i18next';
 
 interface StickyMobileCTAProps {
   onCtaClick: () => void;
 }
 
 export function StickyMobileCTA({ onCtaClick }: StickyMobileCTAProps) {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -36,7 +38,7 @@ export function StickyMobileCTA({ onCtaClick }: StickyMobileCTAProps) {
           className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-[#0A0A0A]/95 backdrop-blur-lg border-t border-[#2a2a2a] px-6 py-4"
         >
           <Button onClick={onCtaClick} className="w-full">
-            Start Program
+            {t('sticky.cta')}
           </Button>
         </motion.div>
       )}

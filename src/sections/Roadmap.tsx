@@ -1,59 +1,38 @@
 import { Card } from '../components/Card';
 import { Flame, Wrench, Trophy } from 'lucide-react';
-
-const phases = [
-  {
-    icon: Flame,
-    number: 'Phase 1',
-    title: 'Ignite',
-    subtitle: 'Relief & Inflammation',
-    description: 'We don\'t just reduce inflammation—we redirect it. Strategic stress-loading initiates your body\'s adaptive response, preparing the foundation for reconstruction.',
-    features: [
-      'Biomechanical assessment',
-      'Pain pattern mapping',
-      'Initial load tolerance testing',
-      'Inflammation control protocols'
-    ]
-  },
-  {
-    icon: Wrench,
-    number: 'Phase 2',
-    title: 'Rebuild',
-    subtitle: 'Functional Mobility',
-    description: 'Traditional PT stops here. We\'re just getting started. Progressive overload strategies rebuild structural integrity while restoring full range of motion.',
-    features: [
-      'Progressive load escalation',
-      'Movement pattern correction',
-      'Tissue resilience building',
-      'Functional strength development'
-    ]
-  },
-  {
-    icon: Trophy,
-    number: 'Phase 3',
-    title: 'Sustain',
-    subtitle: 'Peak Performance',
-    description: 'Recovery isn\'t the finish line—it\'s the starting block. We optimize your biomechanics for sustained high performance and injury prevention.',
-    features: [
-      'Performance optimization',
-      'Advanced movement mechanics',
-      'Injury prevention protocols',
-      'Long-term maintenance blueprint'
-    ]
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 export function Roadmap() {
+  const { t } = useTranslation();
+
+  const phases = [
+    {
+      icon: Flame,
+      titleKey: 'roadmap.phase1.title',
+      subtitleKey: 'roadmap.phase1.subtitle',
+      descriptionKey: 'roadmap.phase1.description'
+    },
+    {
+      icon: Wrench,
+      titleKey: 'roadmap.phase2.title',
+      subtitleKey: 'roadmap.phase2.subtitle',
+      descriptionKey: 'roadmap.phase2.description'
+    },
+    {
+      icon: Trophy,
+      titleKey: 'roadmap.phase3.title',
+      subtitleKey: 'roadmap.phase3.subtitle',
+      descriptionKey: 'roadmap.phase3.description'
+    }
+  ];
+
   return (
     <section className="px-6 md:px-12 lg:px-24 py-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            The <span className="text-[#00D1D1]">Catalyst Method</span>
+            {t('roadmap.title')} <span className="text-[#00D1D1]">{t('roadmap.subtitle')}</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            A data-driven, three-phase transformation that rejects traditional "rest and ice" protocols
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -64,22 +43,22 @@ export function Roadmap() {
                   <phase.icon className="text-[#00D1D1]" size={24} />
                 </div>
                 <div>
-                  <div className="text-sm text-[#00D1D1] font-semibold">{phase.number}</div>
-                  <div className="text-2xl font-bold text-white">{phase.title}</div>
+                  <div className="text-sm text-[#00D1D1] font-semibold">Phase {index + 1}</div>
+                  <div className="text-2xl font-bold text-white">{t(phase.titleKey)}</div>
                 </div>
               </div>
 
-              <div className="text-lg font-semibold text-gray-300 mb-4">{phase.subtitle}</div>
+              <div className="text-lg font-semibold text-gray-300 mb-4">{t(phase.subtitleKey)}</div>
 
               <p className="text-gray-400 leading-relaxed mb-6">
-                {phase.description}
+                {t(phase.descriptionKey)}
               </p>
 
               <ul className="space-y-3">
-                {phase.features.map((feature, idx) => (
+                {[1, 2, 3, 4].map((idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <span className="text-[#00D1D1] mt-1">→</span>
-                    <span className="text-gray-400">{feature}</span>
+                    <span className="text-gray-400">{t(`roadmap.phase${index + 1}.feature${idx}`, { defaultValue: '' })}</span>
                   </li>
                 ))}
               </ul>
